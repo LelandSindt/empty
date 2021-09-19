@@ -2,7 +2,10 @@ name: Publish Docker image
 
 on:
   push:
-    branches: [actions]
+    branches: [actions, main]
+  release:
+    types: 
+      - created
 
 jobs:
   push_to_registries:
